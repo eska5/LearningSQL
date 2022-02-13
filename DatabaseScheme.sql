@@ -16,22 +16,22 @@ primary key (ID_galerii)
 
 
 
-IF EXISTS (SELECT * FROM sys.tables WHERE name='artyœci')
-	DROP TABLE artyœci
+IF EXISTS (SELECT * FROM sys.tables WHERE name='artyÅ“ci')
+	DROP TABLE artyÅ“ci
 GO
 
-Create table artyœci
+Create table artyÅ“ci
 (
 ID_artysty int IDENTITY(1,1) NOT NULL,
 imie varchar(255) NOT NULL,
 nazwisko varchar(255) NOT NULL,
 data_urodzenia DATE NOT NULL,
-data_œmierci DATE NULL,
+data_Å“mierci DATE NULL,
 primary key (ID_artysty)
 );
 
-ALTER TABLE artyœci
-    ADD CONSTRAINT ARTYŒCI_DATA_URODZENIA CHECK (data_urodzenia < GETDATE());
+ALTER TABLE artyÅ“ci
+    ADD CONSTRAINT ARTYÅ’CI_DATA_URODZENIA CHECK (data_urodzenia < GETDATE());
 
 
 
@@ -42,11 +42,11 @@ GO
 Create table aukcje
 (
 ID_aukcji int IDENTITY(1,1) NOT NULL,
-iloœæ_dzie³ int NOT NULL,
-data_rozpoczêcia DATE NOT NULL,
-data_zakoñczenia DATE NOT NULL,
-iloœæ_sprzedanych_dzie³ int NOT NULL,
-przychód money NOT NULL,
+iloÅ“Ã¦_dzieÂ³ int NOT NULL,
+data_rozpoczÃªcia DATE NOT NULL,
+data_zakoÃ±czenia DATE NOT NULL,
+iloÅ“Ã¦_sprzedanych_dzieÂ³ int NOT NULL,
+przychÃ³d money NOT NULL,
 ID_galerii int FOREIGN KEY REFERENCES galerie(ID_galerii) ON UPDATE CASCADE ON DELETE CASCADE NOT NULL,
 primary key (ID_aukcji)
 );
@@ -59,8 +59,8 @@ Create table wystawy
 (
 ID_wystawy int IDENTITY(1,1) NOT NULL,
 data_otwarcia DATE NOT NULL,
-data_zamkniêcia DATE NULL,
-iloœæ_dzie³ int NOT NULL,
+data_zamkniÃªcia DATE NULL,
+iloÅ“Ã¦_dzieÂ³ int NOT NULL,
 motyw_przewodni varchar(255) NULL,
 ID_galerii int FOREIGN KEY REFERENCES galerie(ID_galerii) ON UPDATE CASCADE ON DELETE CASCADE NOT NULL,
 primary key (ID_wystawy)
@@ -73,40 +73,40 @@ GO
 Create table transakcje
 (
 ID_transakcji int IDENTITY(1,1) NOT NULL,
-cena_sprzeda¿y money NOT NULL,
-cena_wywo³awcza money NOT NULL,
-czas_sprzeda¿y datetime NOT NULL ,
+cena_sprzedaÂ¿y money NOT NULL,
+cena_wywoÂ³awcza money NOT NULL,
+czas_sprzedaÂ¿y datetime NOT NULL ,
 ID_aukcji int FOREIGN KEY REFERENCES aukcje(ID_aukcji) ON UPDATE CASCADE ON DELETE CASCADE NOT NULL,
 primary key (ID_transakcji)
 );
 
 ALTER TABLE transakcje
-    ADD CONSTRAINT TRANSAKCJE_CENA_SPRZEDA¯Y CHECK (cena_sprzeda¿y >= cena_wywo³awcza);
+    ADD CONSTRAINT TRANSAKCJE_CENA_SPRZEDAÂ¯Y CHECK (cena_sprzedaÂ¿y >= cena_wywoÂ³awcza);
 
 
 
 
 
-IF EXISTS (SELECT * FROM sys.tables WHERE name='dzie³a')
-	DROP TABLE dzie³a
+IF EXISTS (SELECT * FROM sys.tables WHERE name='dzieÂ³a')
+	DROP TABLE dzieÂ³a
 GO
 
-Create table dzie³a
+Create table dzieÂ³a
 (
-ID_dzie³a int IDENTITY(1,1) NOT NULL,
-tytu³ varchar(255) NOT NULL,
+ID_dzieÂ³a int IDENTITY(1,1) NOT NULL,
+tytuÂ³ varchar(255) NOT NULL,
 typ varchar(255) NOT NULL,
 data_wykonania DATE NULL, 
 pochodzenie varchar(255) NULL,
-ID_artysty int FOREIGN KEY REFERENCES artyœci(ID_artysty) ON UPDATE CASCADE ON DELETE CASCADE NOT NULL,
+ID_artysty int FOREIGN KEY REFERENCES artyÅ“ci(ID_artysty) ON UPDATE CASCADE ON DELETE CASCADE NOT NULL,
 ID_transakcji int FOREIGN KEY REFERENCES transakcje(ID_transakcji) ON UPDATE NO ACTION ON DELETE NO ACTION NULL,
 ID_wystawy int  FOREIGN KEY REFERENCES wystawy(ID_wystawy) ON UPDATE NO ACTION ON DELETE NO ACTION NULL,
 ID_galerii int FOREIGN KEY REFERENCES galerie(ID_galerii) ON UPDATE NO ACTION ON DELETE NO ACTION NULL,
-primary key (ID_dzie³a)
+primary key (ID_dzieÂ³a)
 );
 
-ALTER TABLE dzie³a
-    ADD CONSTRAINT DZIE£A_DATA_WYKONANIA CHECK (data_wykonania < GETDATE());
+ALTER TABLE dzieÂ³a
+    ADD CONSTRAINT DZIEÂ£A_DATA_WYKONANIA CHECK (data_wykonania < GETDATE());
 
 IF EXISTS (SELECT * FROM sys.tables WHERE name='bilety')
 	DROP TABLE bilety
@@ -136,8 +136,8 @@ GO
 Create table konserwatorzy
 (
 ID_konserwatora int IDENTITY(1,1) NOT NULL,
-typ_dzie³ varchar(255) NOT NULL,
-iloœæ_konserwacji int DEFAULT 0 NOT NULL ,
+typ_dzieÂ³ varchar(255) NOT NULL,
+iloÅ“Ã¦_konserwacji int DEFAULT 0 NOT NULL ,
 primary key (ID_konserwatora)
 );
 
@@ -152,7 +152,7 @@ Create table pracownicy
 ID_pracownika int IDENTITY(1,1) NOT NULL,
 imie varchar(255) NOT NULL,
 nazwisko varchar(255) NOT NULL,
-data_przyjêcia_do_pracy DATE DEFAULT GETDATE() NOT NULL ,
+data_przyjÃªcia_do_pracy DATE DEFAULT GETDATE() NOT NULL ,
 ID_aukcji int FOREIGN KEY REFERENCES aukcje(ID_aukcji) ON UPDATE NO ACTION ON DELETE NO ACTION NULL,
 ID_wystawy int FOREIGN KEY REFERENCES wystawy(ID_wystawy) ON UPDATE NO ACTION ON DELETE NO ACTION NULL,
 ID_galerii int FOREIGN KEY REFERENCES galerie(ID_galerii) ON UPDATE CASCADE ON DELETE CASCADE NULL,
@@ -168,10 +168,10 @@ GO
 Create table konserwacje
 (
 ID_konserwacji int IDENTITY(1,1) NOT NULL,
-data_rozpoczêcia DATE NOT NULL,
-data_koñca DATE NULL,
+data_rozpoczÃªcia DATE NOT NULL,
+data_koÃ±ca DATE NULL,
 koszt_konserwacji money NOT NULL ,
-ID_dzie³a int FOREIGN KEY REFERENCES dzie³a(ID_dzie³a) ON UPDATE CASCADE ON DELETE CASCADE NOT NULL,
+ID_dzieÂ³a int FOREIGN KEY REFERENCES dzieÂ³a(ID_dzieÂ³a) ON UPDATE CASCADE ON DELETE CASCADE NOT NULL,
 ID_konserwatora int FOREIGN KEY REFERENCES konserwatorzy(ID_konserwatora)ON UPDATE CASCADE ON DELETE CASCADE NOT NULL,
 primary key (ID_konserwacji)
 );
@@ -185,7 +185,7 @@ Create table klienci
 ID_klienta int IDENTITY(1,1) NOT NULL UNIQUE,
 imie varchar(255) NOT NULL,
 nazwisko varchar(255) NOT NULL,
-rodzaj_p³atnoœci varchar(255) NOT NULL,
+rodzaj_pÂ³atnoÅ“ci varchar(255) NOT NULL,
 ID_transakcji int FOREIGN KEY REFERENCES transakcje(ID_transakcji) ON UPDATE CASCADE ON DELETE CASCADE NOT NULL,
 primary key (ID_klienta)
 );
