@@ -13,8 +13,8 @@ INSERT INTO [dbo].[galerie]
            ,'Paryz')
 INSERT INTO [dbo].[galerie]
      VALUES
-           ('Galeria W≥oska'
-           ,'W≥ochy'
+           ('Galeria WÈÄôska'
+           ,'WÈÄôchy'
            ,'rzym')
 INSERT INTO [dbo].[galerie]
      VALUES
@@ -23,9 +23,9 @@ INSERT INTO [dbo].[galerie]
            ,'Oslo')
 INSERT INTO [dbo].[galerie]
      VALUES
-           ('Galeria g≥Ûwna'
+           ('Galeria gÂ†Øwna'
            ,'Polska'
-           ,'GdaÒsk')
+           ,'GdaÈõük')
 INSERT INTO [dbo].[galerie]
      VALUES
            ('Galeria Zagraniczna'
@@ -33,12 +33,12 @@ INSERT INTO [dbo].[galerie]
            ,'New_York')
 INSERT INTO [dbo].[galerie]
      VALUES
-           ('Galeria JapoÒska'
+           ('Galeria JapoÈõüka'
            ,'Japonia'
            ,'Tokyo')
 INSERT INTO [dbo].[galerie]
      VALUES
-           ('Galeria ChiÒska'
+           ('Galeria ChiÈõüka'
            ,'Chiny'
            ,'Pekin')
 INSERT INTO [dbo].[galerie]
@@ -70,7 +70,7 @@ INSERT INTO [dbo].[wystawy]
            ('2020-06-12'
            ,'2020-08-13'
            ,4
-           ,'Sztuka úredniowieczna'
+           ,'Sztuka ÓØôedniowieczna'
            ,2)
 INSERT INTO [dbo].[wystawy]
      VALUES
@@ -288,61 +288,61 @@ GO
 
 
 
-INSERT INTO [dbo].[artyúci]
+INSERT INTO [dbo].[artyÓØäi]
      VALUES
            ('Jakub'
            ,'Sachajko'
            ,'1920-09-18'
            ,'2010-10-10')
-INSERT INTO [dbo].[artyúci]
+INSERT INTO [dbo].[artyÓØäi]
 	 VALUES
            ('Vincent'
            ,'Wspanialy'
            ,'1967-07-30'
            ,'2002-12-30')
-INSERT INTO [dbo].[artyúci]
+INSERT INTO [dbo].[artyÓØäi]
 	 VALUES
            ('Jan'
            ,'Nowak'
            ,'1950-05-13'
            ,'2012-06-23')
-INSERT INTO [dbo].[artyúci]
+INSERT INTO [dbo].[artyÓØäi]
 	 VALUES
            ('Jakub'
            ,'Wisnia'
            ,'1990-02-06'
            ,NULL)
-INSERT INTO [dbo].[artyúci]
+INSERT INTO [dbo].[artyÓØäi]
      VALUES
            ('Jakub'
            ,'Kozak'
            ,'1960-10-18'
            ,'2002-04-20')
-INSERT INTO [dbo].[artyúci]
+INSERT INTO [dbo].[artyÓØäi]
 	 VALUES
            ('Vincent'
            ,'Patelnia'
            ,'1964-12-05'
            ,'2009-01-01')
-INSERT INTO [dbo].[artyúci]
+INSERT INTO [dbo].[artyÓØäi]
 	 VALUES
            ('Jan'
            ,'Muzyk'
            ,'1933-02-27'
            ,'2019-04-13')
-INSERT INTO [dbo].[artyúci]
+INSERT INTO [dbo].[artyÓØäi]
 	 VALUES
-           ('Jaros≥aw'
-           ,'Wspania≥y'
+           ('JarosË±âw'
+           ,'WspaniaÈÄ†'
            ,'1980-03-03'
            ,NULL)
-INSERT INTO [dbo].[artyúci]
+INSERT INTO [dbo].[artyÓØäi]
 	 VALUES
            ('Ania'
            ,'Sterkosman'
            ,'1957-02-17'
            ,'2000-04-23')
-INSERT INTO [dbo].[artyúci]
+INSERT INTO [dbo].[artyÓØäi]
 	 VALUES
            ('Martyna'
            ,'Kosan'
@@ -557,13 +557,13 @@ INSERT INTO [dbo].[klienci]
      VALUES
            ('Anna'
            ,'Kowalska'
-           ,'gotÛwka'
+           ,'gotÈóöka'
            ,3)
 INSERT INTO [dbo].[klienci]
      VALUES
-           ('£ukasz'
-           ,'Niedüwiadek'
-           ,'gotÛwka'
+           ('„ÑÜkasz'
+           ,'NiedÓ∂µiadek'
+           ,'gotÈóöka'
            ,4)
 
 INSERT INTO [dbo].[klienci]
@@ -583,7 +583,7 @@ INSERT INTO [dbo].[klienci]
      VALUES
            ('Mateusz'
            ,'Molga'
-           ,'gotÛwka'
+           ,'gotÈóöka'
            ,7)
 INSERT INTO [dbo].[klienci]
      VALUES
@@ -595,8 +595,8 @@ INSERT INTO [dbo].[klienci]
 INSERT INTO [dbo].[klienci]
      VALUES
            ('Wiktor'
-           ,'KraúiÒski'
-           ,'gotÛwka'
+           ,'KraÓØêÈõüki'
+           ,'gotÈóöka'
            ,9)
 INSERT INTO [dbo].[klienci]
      VALUES
@@ -608,7 +608,7 @@ INSERT INTO [dbo].[klienci]
      VALUES
            ('Jan'
            ,'Dzban'
-           ,'gotÛwka'
+           ,'gotÈóöka'
            ,9)
 INSERT INTO [dbo].[klienci]
      VALUES
@@ -624,7 +624,7 @@ GO
 USE [galerie_sztuki_lab1]
 GO
 
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Kocham bazy danych'
            ,'Obraz'
@@ -634,7 +634,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,NULL
            ,1)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
             ('Stworzenie Swiata'
            ,'Obraz'
@@ -644,7 +644,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,1
            ,null)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('krzyk'
            ,'Obraz'
@@ -654,7 +654,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,2
            ,NULL
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('dwie Skrzynie'
            ,'Przedmiot'
@@ -664,7 +664,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,5
            ,NULL
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Lot nad gniazem'
            ,'Obraz'
@@ -674,7 +674,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,NULL
            ,6)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('swieta'
            ,'Obraz'
@@ -684,7 +684,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,null
            ,4
            ,null)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Gwiazdy noca'
            ,'Obraz'
@@ -694,7 +694,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,4
            ,NULL
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Puszka Wody'
            ,'Przedmiot'
@@ -704,7 +704,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,8
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Zwyciestwo Napoleona'
            ,'Obraz'
@@ -714,7 +714,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,10
            ,NULL
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Tragedia Informatyczna'
            ,'Obraz'
@@ -724,9 +724,9 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,NULL
            ,6)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
-           ('sza≥'
+           ('szaÔøΩ'
            ,'Obraz'
            ,'2010-03-14'
            ,'Polska'
@@ -734,7 +734,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,8
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('furia'
            ,'Obraz'
@@ -744,9 +744,9 @@ INSERT INTO [dbo].[dzie≥a]
            ,8
            ,NULL
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
-           ('zniechÍcenie'
+           ('zniechÁíöenie'
            ,'Obraz'
            ,'2000-12-01'
            ,'Rosja'
@@ -754,7 +754,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,NULL
            ,9)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Formacja_Gliniana'
            ,'Przedmiot'
@@ -764,7 +764,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,5
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('strach'
            ,'Obraz'
@@ -774,7 +774,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,7
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Zadania_laboratoryjne'
            ,'Obraz'
@@ -784,7 +784,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,NULL
            ,4)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Bohomazy'
            ,'Obraz'
@@ -794,17 +794,17 @@ INSERT INTO [dbo].[dzie≥a]
            ,11
            ,NULL
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('mazaczki'
            ,'Obraz'
            ,'2000-03-03'
-           ,'W≥ochy'
+           ,'WÈÄôchy'
            ,8
            ,11
            ,NULL
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Paper_Plane'
            ,'Przedmiot'
@@ -814,7 +814,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,4
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Winnable'
            ,'Obraz'
@@ -824,7 +824,7 @@ INSERT INTO [dbo].[dzie≥a]
            ,NULL
            ,6
            ,NULL)
-INSERT INTO [dbo].[dzie≥a]
+INSERT INTO [dbo].[dzieË±â]
      VALUES
            ('Winnable'
            ,'Obraz'
@@ -1060,7 +1060,7 @@ INSERT INTO [dbo].[pracownicy]
            ,8)
 INSERT INTO [dbo].[pracownicy]
      VALUES
-           ('Ma≥gorzata'
+           ('MaË≤™orzata'
            ,'Hofmann'
            ,'2012-11-04'
            ,NULL
@@ -1097,7 +1097,7 @@ INSERT INTO [dbo].[pracownicy]
 INSERT INTO [dbo].[pracownicy]
      VALUES
            ('Arkadiusz'
-           ,'G≥owacki'
+           ,'GÈÄôwacki'
            ,'2019-06-16'
            ,NULL
            ,4
@@ -1106,7 +1106,7 @@ INSERT INTO [dbo].[pracownicy]
 INSERT INTO [dbo].[pracownicy]
      VALUES
            ('Arkadiusz'
-           ,'G≥owacki'
+           ,'GÈÄôwacki'
            ,'2019-06-16'
            ,NULL
            ,5
@@ -1115,7 +1115,7 @@ INSERT INTO [dbo].[pracownicy]
 INSERT INTO [dbo].[pracownicy]
      VALUES
            ('Arkadiusz'
-           ,'G≥owacki'
+           ,'GÈÄôwacki'
            ,'2019-06-16'
            ,NULL
            ,6
@@ -1141,7 +1141,7 @@ INSERT INTO [dbo].[pracownicy]
            ,NULL)
 INSERT INTO [dbo].[pracownicy]
      VALUES
-           ('Jaros≥aw'
+           ('JarosË±âw'
            ,'Szczypiot'
            ,'2010-12-29'
            ,1
@@ -1150,7 +1150,7 @@ INSERT INTO [dbo].[pracownicy]
            ,NULL)
 INSERT INTO [dbo].[pracownicy]
      VALUES
-           ('Jaros≥aw'
+           ('JarosË±âw'
            ,'Szczypiot'
            ,'2010-12-29'
            ,2
@@ -1159,7 +1159,7 @@ INSERT INTO [dbo].[pracownicy]
            ,NULL)
 INSERT INTO [dbo].[pracownicy]
      VALUES
-           ('Jaros≥aw'
+           ('JarosË±âw'
            ,'Szczypiot'
            ,'2010-12-29'
            ,3
